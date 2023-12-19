@@ -1,0 +1,119 @@
+@import '_variable';
+@import '_header';
+@import '_footer';
+
+.catalog {
+    padding: 65px 0;
+    background: #EBEBEB;
+    
+    .catalog-items {
+        justify-content: space-around;
+        h2 {
+            @include style(#333,25px,normal,400)
+        }
+    
+        p {
+            width: 575px;
+            @include style(#333, 13px, normal, 400)
+        }
+    
+        img {
+            width: 400px;
+            border-radius: 20px;
+        }
+
+        .catalog-info {
+            a {
+                @include style(#000,14px,normal,400);
+                padding:15px 25px ;
+                border-radius: 5px;
+                background: #FFF;
+            }
+        }
+
+        .catalog-img {
+            span {
+                text-align: center;
+                width: 320px;
+                @include style(#444,13px,normal,400)
+            }
+        }
+    }
+}
+
+
+.course {
+    padding: 50px 0;
+    background: #FFFFFF;
+
+    &-items{
+        
+        .course-item-one {
+            h3 {
+                @include style(#000,32px,normal,400)
+            }
+
+            p {
+                width: 500px;
+                @include style(#000,15px,normal,400)
+            }
+            
+            span {
+                margin-left: 160px;
+                text-align: center;
+                width: 300px;
+                @include style(#777,12px,normal,400)
+            }
+        }
+
+        .course-item-two {
+            h3 {
+                margin-top: 100px;
+                text-align: end;
+                @include style(#000,32px,normal,400)  
+            }
+
+            p {
+                transition: all 0.5s ease-in-out;
+                width: 500px;
+                @include style(#000,15px,normal,400)
+            }
+        }
+    }
+}
+
+.recomendation {
+    padding: 80px;
+    // background: #EBEBEB;
+}
+
+.recomendation-items {
+    img {
+        width: 200px;
+        height: 260px;
+    }
+
+    h3 {
+        @include style(#333,32px,normal,400)
+    }
+
+    .container-book {
+        position: relative;
+        p {
+            position: absolute;
+            visibility: hidden;
+            @include style(#333,10,normal,400);
+            padding: 10px;
+            top: 25%;
+            transform: translateX(-50%);
+            left: 50%;
+            background-color: #EBEBEB;
+            width: 280px;
+            border-radius: 15px
+        }
+    }
+}
+
+.active_book {
+    visibility: visible;
+}

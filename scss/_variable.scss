@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@mixin style($color,$f-size,$f-style,$f-weight){
+    color:$color;
+    font-size: $f-size;
+    font-style: $f-style;
+    font-weight: $f-weight;
+}
+
+.wrapper {
+    max-width: 1152px;
+    width: 100%;
+    margin: 0 auto ;
+}

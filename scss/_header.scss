@@ -1,0 +1,139 @@
+.header {
+    background: #6B6B6B;
+    
+    ul {
+        gap: 40px;
+    }
+    
+    a {
+        font-family: 'Roboto';
+        @include style(#FFF,16px,normal,400);
+    }
+
+    li {
+        border-radius: 20px;
+        padding:5px 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            border: none;
+            transform: scale(1.2);
+            box-shadow: 3px 2px 15px #333 ;
+        }
+    }
+
+    img {
+        width: 180px;
+    }
+}
+
+
+.registration-container {
+    // display: none;
+    visibility: hidden;
+    border-radius: 20px;
+    position: fixed;
+    top: 50px;
+    left: 480px;
+    padding: 60px;
+    text-align: center;
+    background-color: #0080a7;
+    
+    h2 {
+        border-bottom: 1px solid #333;
+        margin-bottom: 20px;
+        color: #EBEBEB;
+    }
+
+    label {
+        color: #EBEBEB;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+        button {
+            @include style(#333,13px,normal,700);
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 10px;
+            // transition:  0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
+            transform: scale(1);
+            &:hover {
+                transition: transform 0.5s ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+        input {
+            padding:5px 10px;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.login-container {
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+    border-radius: 20px;
+    position: fixed;
+    top: 50px;
+    left: 480px;
+    padding: 60px;
+    text-align: center;
+    background-color: #0080a7;
+    
+    h2 {
+        border-bottom: 1px solid #333;
+        margin-bottom: 20px;
+        color: #EBEBEB;
+    }
+
+    label {
+        color: #EBEBEB;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+        button {
+            @include style(#333,13px,normal,700);
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            padding: 10px 20px;
+            transition: transform 0.5s ease-in-out;
+            transform: scale(1);
+            &:hover {
+                transition: transform 0.5s ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+        input {
+            padding:5px 10px;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.active-form {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+}

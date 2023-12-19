@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1152px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #6B6B6B;
+}
+.header ul {
+  gap: 40px;
+}
+.header a {
+  font-family: "Roboto";
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.header li {
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: all 0.2s ease-in-out;
+}
+.header li:hover {
+  border: none;
+  transform: scale(1.2);
+  box-shadow: 3px 2px 15px #333;
+}
+.header img {
+  width: 180px;
+}
+
+.registration-container {
+  visibility: hidden;
+  border-radius: 20px;
+  position: fixed;
+  top: 50px;
+  left: 480px;
+  padding: 60px;
+  text-align: center;
+  background-color: #0080a7;
+}
+.registration-container h2 {
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+  color: #EBEBEB;
+}
+.registration-container label {
+  color: #EBEBEB;
+}
+.registration-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.registration-container form button {
+  color: #333;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+.registration-container form button:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+.registration-container form input {
+  padding: 5px 10px;
+}
+.registration-container .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-container {
+  transition: opacity 0.5s ease-in-out;
+  visibility: hidden;
+  border-radius: 20px;
+  position: fixed;
+  top: 50px;
+  left: 480px;
+  padding: 60px;
+  text-align: center;
+  background-color: #0080a7;
+}
+.login-container h2 {
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+  color: #EBEBEB;
+}
+.login-container label {
+  color: #EBEBEB;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.login-container form button {
+  color: #333;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+.login-container form button:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+.login-container form input {
+  padding: 5px 10px;
+}
+.login-container .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.active-form {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+}
+
+.footer {
+  background: #6B6B6B;
+}
+.footer ul {
+  gap: 2px;
+}
+.footer a {
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.catalog {
+  padding: 65px 0;
+  background: #EBEBEB;
+}
+.catalog .catalog-items {
+  justify-content: space-around;
+}
+.catalog .catalog-items h2 {
+  color: #333;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+.catalog .catalog-items p {
+  width: 575px;
+  color: #333;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+.catalog .catalog-items img {
+  width: 400px;
+  border-radius: 20px;
+}
+.catalog .catalog-items .catalog-info a {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background: #FFF;
+}
+.catalog .catalog-items .catalog-img span {
+  text-align: center;
+  width: 320px;
+  color: #444;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.course {
+  padding: 50px 0;
+  background: #FFFFFF;
+}
+.course-items .course-item-one h3 {
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+.course-items .course-item-one p {
+  width: 500px;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.course-items .course-item-one span {
+  margin-left: 160px;
+  text-align: center;
+  width: 300px;
+  color: #777;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.course-items .course-item-two h3 {
+  margin-top: 100px;
+  text-align: end;
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+.course-items .course-item-two p {
+  transition: all 0.5s ease-in-out;
+  width: 500px;
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.recomendation {
+  padding: 80px;
+}
+
+.recomendation-items img {
+  width: 200px;
+  height: 260px;
+}
+.recomendation-items h3 {
+  color: #333;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+.recomendation-items .container-book {
+  position: relative;
+}
+.recomendation-items .container-book p {
+  position: absolute;
+  visibility: hidden;
+  color: #333;
+  font-size: 10;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px;
+  top: 25%;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #EBEBEB;
+  width: 280px;
+  border-radius: 15px;
+}
+
+.active_book {
+  visibility: visible;
+}/*# sourceMappingURL=style.css.map */

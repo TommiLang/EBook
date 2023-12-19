@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/macro-css/index.min.css">
+    <link rel="stylesheet" href="./scss/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBook</title>
+</head>
+<body>
+    <header class="header ">
+        <div class="wrapper">
+            <div class="header-items d-flex justify-between	pos-r">
+                <img class="header-items_logo" src="./images/logoEbook-transformed.png" alt="Logo EBook">
+                <ul class="header-items_list d-flex align-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="button_register">Register</a></li>
+                    <li><a href="#" class="button_login">Login</a></li>
+                </ul>
+                <div class="form-avtoriz registration-container">
+                    <h2>Регистрация</h2>
+                    <form class="registration-form">
+                      <div class="form-group">
+                        <!-- <label for="username">Имя пользователя:</label> -->
+                        <input type="text" id="username" name="username" required placeholder="Имя пользователя">
+                      </div>
+                
+                      <div class="form-group">
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                      </div>
+                
+                      <div class="form-group">
+                        <!-- <label for="password">Пароль:</label> -->
+                        <input type="password" id="password" name="password" required placeholder="Пароль">
+                      </div>
+                
+                      <div class="form-group">
+                        <button type="submit">Зарегистрироваться</button>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+            
+            <div class="form-avtoriz login-container">
+                <h2>Вход</h2>
+                <form class="login-form">
+                  <div class="form-group">
+                    <!-- <label for="email">Email:</label> -->
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                  </div>
+            
+                  <div class="form-group">
+                    <!-- <label for="password">Пароль:</label> -->
+                    <input type="password" id="password" name="password" required placeholder="Пароль">
+                  </div>
+            
+                  <div class="form-group">
+                    <button type="submit">Войти</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="catalog">
+            <div class="wrapper">
+                <div class="catalog-items d-flex justify-around" >
+                    <div class="catalog-info">
+                        <h2 class="mb-10">"Электронная библиотека" в учебном заведении</h2>
+                        <p class="mb-40">Зачем нужна "Электронная библиотека" в учебном заведении?
+                            Электронная библиотека расширяет доступ студентов и преподавателей к обширному массиву образовательных ресурсов. Электронные книги, статьи, учебники и базы данных становятся легко доступными в любое время и в любом месте.
+                        </p>
+                        <span><a href="#recomendation_book">Какие книги можно почитать?</a></span>
+                    </div>
+                    <div class="catalog-img d-flex flex-column align-center">
+                        <img class="mb-10" src="./images/image1.jpeg" alt="">
+                        <span>"Жизнь — это не количество вдохов и выдохов, а моменты, которые заставляют сердце замирать и время останавливаться."</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="course">
+            <div class="wrapper">
+                <div class="course-items">
+                    <div class="course-item-one d-flex ">
+                        <div class="course-item-one-text">
+                            <h3 class="mb-15">Статьи</h3>
+                            <p class="">
+                            Статьи в электронной библиотеке — это неисчерпаемый источник знаний, предоставляющий уникальные исследования, обзоры и аналитику. Они являются мостом между академическим миром и широкой публикой, предоставляя доступ к глубоким исследованиям, новым тенденциям и передовому опыту. Статьи — это ценный ресурс для тех, кто стремится к саморазвитию, обновлению знаний и погружению в увлекательные области науки и образования.</p>
+                        </div>
+                        <div class="couser-item-one-img">
+                            <img src="./images/image2.webp" alt="">
+                            <span class="d-block">
+                                "Статьи — это не просто строки на экране, это идеи, которые разбуджают ум, слова, которые танцуют на странице и могут изменить путь вашего мышления."</span>
+                        </div>
+                    </div>
+                    <div class="course-item-two d-flex justify-around">
+                        <div class="course-item-two-img">
+                            <img class="ml-20" src="./images/image3.jpg" alt="">
+                            <span></span>
+                        </div>
+                        <div class="course-item-two-text">
+                            <h3 class="mb-20">Поиск в интернете книг</h3>
+                            <p>В интернете поиск книг — это мгновенный путь к бесчисленным литературным сокровищам. Электронные каталоги предоставляют подробные описания, рейтинги и отзывы, помогая читателям быстро находить интересующие произведения. Возможность создания виртуальной библиотеки и мобильный доступ к книгам делают чтение более доступным и удобным.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recomendation">
+            <div class="wrapper">
+                <div class="recomendation-items">
+                    <h3 class="mb-20" id="recomendation_book">Рекомендация книг:</h3>
+                    <div class="recomendation-items-books d-flex justify-around">
+                        <div class="container-book ">
+                            <img class="book" src="./images/book1.webp" alt="">
+                            <p class="book_text" style="visibility: visible;">В книге в увлекательной форме рассказывается о событиях из истории военного искусства эпохи Раннего Халифата. В центре этих событий знаменитый воин, мусульманский полководец, ни разу не потерпевший поражения</p>
+                        </div>
+                        <div class="container-book">
+                            <img class="book mt-20" style="width: 150px; height: 220px;" src="./images/book2.webp" alt="">
+                            <p class="book_text">Книга П.А. Висковатого принадлежит к классическим трудам ХIХ века. Исследователь опирался на свидетельства людей, лично знавших поэта, и эта работа по праву считается первоисточником для изучения жизни и творчества Лермонтова.
+                            </p>
+                        </div>
+                        <div class="container-book ">
+                            <img class="book" src="./images/book3.1.webp" alt="">
+                            <p class="book_text">Грокаем алгоритмы. Иллюстрированное пособие для программистов и любопытствующих от Бхаргава А.Сам автор указывает, что книга для самоучек, студентов, выпускников и тех, у кого программирование не является основным профилем.</p>
+                        </div>
+                        <div class="container-book">
+                            <img class="book" src="./images/book4.jpeg" alt="">
+                            <p class="book_text">С помощью этой практической книги вы получите всестороннее и глубокое введение в основы языка Python. Будучи основанным на популярном учебном курсе Марка Лутца, обновленное 5-е издание книги поможет вам быстро научиться писать эффективный высококачественный код на Python.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-30">
+        <div class="wrapper">
+            <div class="footer-items d-flex justify-between align-center">
+                <img width="180px" src="./images/logoEbook-transformed.png" alt="">
+                <div class="footer-contact">
+                    <ul class="d-flex flex-column ">
+                        <h3 class="mt-20 mb-10">Ссылки на книги</h3>
+                        <li><a href="#">Халид Ибн Аль-Валид</a></li>
+                        <li><a href="#">Лермонтов М.Ю. "Жизнь и творчетсво"</a></li>
+                        <li><a href="#">Грокаем алгоритмы</a></li>
+                        <li><a href="#">Изучаем Python</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>

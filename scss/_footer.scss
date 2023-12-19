@@ -1,0 +1,10 @@
+.footer {
+    background: #6B6B6B;
+    ul {
+        gap: 2px;
+    }
+
+    a {
+        @include style(#333,14px,normal,400)
+    }
+}
